@@ -3,13 +3,11 @@
 <html lang="en">
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <head>
-        <title>Register - Ging Wallet</title>
+        <title>Register - Bitcoin Wallet</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--===============================================================================================-->
-        <link rel="icon"
-              type="image/png"
-              href="{% static 'images/icons/favicon.ico' %}"/>
+        {% comment %} <link rel="icon" type="image/png" href="{% static 'images/icons/favicon.ico' %}"/> {% endcomment %}
         <!--===============================================================================================-->
         <link rel="stylesheet"
               type="text/css"
@@ -51,15 +49,16 @@
         <div class="limiter">
             <div class="container-login100">
                 <div class="wrap-login100 p-t-90 p-b-30">
-                    <!--<a href="#"><img src="images/logo-free.png"></a>-->
                     <span class="login100-form-title p-b-40">
-                        <h1>
-                            <b>Ging <t style="color: #FF8C00">Wallet</t></b>
-                        </h1>
+                        <a href="/" class="logo">
+                            <h1>
+                                <b>Bitcoin <t style="color: #FF8C00">Wallet</t></b>
+                            </h1>
+                        </a>
                     </span>
                     <form class="login100-form validate-form" action="register" method="POST">
                         {% csrf_token %}
-                        <span class="login100-form-title p-b-40">Register</span>
+                        <span class="login100-form-title p-b-40">REGISTER</span>
                         <div>
                             <style>
 							h5{
@@ -133,14 +132,14 @@
                         </div>
                         <div class="container-login100-form-btn">
                             <button class="login100-form-btn">
-                                <input type="submit" value="Register" style="background-color: #333333;">
+                                <input type="submit" value="REGISTER" style="background-color: #c9c9c9;">
                             </button>
                         </div>
                         <br>
                         <div align="center">
                             <span class="txt2 p-b-10">Already have an account?</span>
                             <br>
-                            <a href="login" class="txt3 bo1 hov1">Login now</a>
+                            <a href="login" class="txt3 bo1 hov1" target="_blank">LOGIN NOW</a>
                         </div>
                     </form>
                 </div>
