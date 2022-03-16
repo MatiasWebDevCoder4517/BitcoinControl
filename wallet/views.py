@@ -37,7 +37,6 @@ def index(request):
             total_received1_int = float(total_received1)
             total_sent1_int = float(total_sent1)
             live_bitcoin_price1_int = float(live_bitcoin_price1)
-
             balance_usd = final_bal1_int*live_bitcoin_price1_int
             total_received_usd = total_received1_int*live_bitcoin_price1_int
             total_sent_usd = total_sent1_int*live_bitcoin_price1_int
